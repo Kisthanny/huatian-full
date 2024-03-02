@@ -20,13 +20,13 @@ export default class UserChat {
 
   public send(msg: Message) {
     this.msgs.push(msg);
-    msg.status = MessageStatus.SENDING;
+    msg.status = MessageStatus.SENT;
     msg.type = MessageType.SEND;
   }
 
   public receive(msg: Message) {
     this.msgs.push(msg);
-    msg.status = MessageStatus.RECEIVED;
+    msg.status = MessageStatus.RECEIVING;
     msg.type = MessageType.RECEIVED;
   }
 
@@ -39,7 +39,7 @@ export default class UserChat {
     });
   }
 
-  public unreadMsg(lastId: number) {
+  public unreadMessage(lastId: number) {
     // client id (最后一条消息)
     return this.msgs.filter((x) => x.id > lastId);
   }

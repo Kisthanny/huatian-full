@@ -9,8 +9,8 @@ export default class ChatSession {
     this.to = to;
   }
 
-  public chat(msg: Message) {
-    this.from.chat().send(msg);
-    this.to.chat().receive(msg);
+  public chat(sentMessage: Message, toReceiveMessage: Message) {
+    this.from.chat().send(sentMessage);
+    this.to.chat().receive(toReceiveMessage);
   }
 }
