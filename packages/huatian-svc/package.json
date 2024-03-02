@@ -1,0 +1,25 @@
+{
+  "name": "@huatian/svc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "dev": "nodemon src/main.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/cookie-parser": "^1.4.7",
+    "@types/node": "^20.11.24"
+  },
+  "dependencies": {
+    "@types/express": "^4.17.21",
+    "cookie-parser": "^1.4.6",
+    "express": "^4.18.3",
+    "nodemon": "^3.1.0",
+    "sequelize": "^6.37.1",
+    "sqlite3": "^5.1.7",
+    "typescript": "^5.3.3"
+  }
+}
