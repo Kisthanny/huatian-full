@@ -1,0 +1,11 @@
+{
+  "name": "@huatian/component",
+  "version": "1.0.0",
+  "description": "component repository for huatian-project",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "",
+  "license": "ISC"
+}
